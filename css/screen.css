@@ -1,0 +1,71 @@
+/*
+Create a second CSS file to stylalize the form between 
+a scroll friendly mobile first version, and a sectioned 
+desktop version. 
+*/
+
+/* */
+body{
+  background-color: #4F86C6;
+}
+
+header{
+  background-color: #17301c;
+  padding: 1em;
+}
+h1{
+	color:#744FC6;
+	font-size: 2.813em;
+  text-align: center;
+}
+main{
+  background-color: #17301c;
+  padding: 2em;
+}
+form{
+  color:#744FC6;
+  font-size: 1.012em;
+}
+input{
+  background-color: #4FB0C6;
+  color: #744FC6;
+}
+::placeholder {
+  color: #17301C;
+  opacity: 1; /* Firefox */
+}
+footer{
+  background-color: #17301c;
+  padding: 1em;
+}
+p{
+  color:#744FC6;
+  font-size: 1.012em;
+}
+@media screen and (min-width: 992px) {
+  header{
+    margin: 1em;
+    border-radius: 1em;
+  }
+  main{
+    padding-bottom: 3.5em;
+    padding-top: 3.5em;
+    margin: 1em;
+    border-radius: 1em;
+  }
+}
+
+/*mobile first version*/
+@media only screen and (min-width: 480px) {
+}
+@media screen and (max-width: 992px) {
+  input{
+    width: 95%;
+    margin: 0.5em;
+  }
+  main{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    
+  }
+}
